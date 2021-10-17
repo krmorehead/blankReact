@@ -2,9 +2,11 @@
   "name": "@limelight/simple-product-builder",
   "version": "1.0.0",
   "description": "POC Product builder",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server  --mode development --inline --hot --open",
+    "start": "ts-node server/index.ts",
+    "start.web": "webpack-dev-server  --mode development --inline --hot --open",
     "build": "webpack  --mode development"
   },
   "repository": {
@@ -41,6 +43,7 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-blockly": "^7.0.0-alpha.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "ts-node": "^10.3.0"
   }
 }
